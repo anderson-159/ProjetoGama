@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/11173dadc7.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Anderson Bolsanelli</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/Logo.png" alt="Logo Anderson Bolsanelli">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/anderson-159">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:andersonbolsanelli2012@hotmail.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/19987172226">Whatsaap</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <selection class="container">
+            <div class="name">
+                <h1>Anderson Bolsanelli</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none; " id="about">
+
+            <div id="about">
+               <p>
+                Veja alguns dos benefícios da Biblioteca Digital na lista abaixo:
+
+1. Biblioteca Digital não necessita de espaço físico
+O espaço virtual elimina a necessidade de uma estrutura física maior para a biblioteca, que gera custos de manutenção, eletricidade, atualização de acervo e pessoal qualificado.
+
+4. Sem fila de espera para utilizar o livro
+Elimina a preocupação com a disponibilidade do material para todos os estudantes, pois a plataforma digital permite o acesso simultâneo dos alunos ao mesmo material. A consulta digital também economiza na reposição de livros danificados.
+
+5. Customização de conteúdo
+Os professores podem customizar os livros,  compondo  o material com capítulos de várias obras, possibilitando o atendimento de uma demanda específica para o que está sendo ensinado.
+               </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                    </form>
+              </div>
+        </selection>
+    </main>
+   
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
